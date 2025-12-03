@@ -1,26 +1,357 @@
 @import "tailwindcss";
 
+/* ========================================
+   Design System - Cartel des Pneus
+   Based on LEX-PORT V2 - Premium Glossy Style
+   ======================================== */
+
 :root {
+  /* Primary - Bleu marine LEX-PORT (from design) */
+  --primary-900: #141B3A;
+  --primary-800: #1E2A4A;
+  --primary-700: #2A3A5A;
+  --primary-600: #364AA0;
+  --primary-500: #4A5FC0;
+
+  /* Accent - Blue gradient */
+  --accent-500: #364AA0;
+  --accent-600: #2A3A8A;
+  --accent-700: #1E2A6A;
+
+  /* Neutral */
+  --neutral-50: #F8FAFC;
+  --neutral-100: #F1F5F9;
+  --neutral-200: #E2E8F0;
+  --neutral-300: #CBD5E1;
+  --neutral-400: #94A3B8;
+  --neutral-500: #64748B;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1E293B;
+  --neutral-900: #0F172A;
+
+  /* Semantic */
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+
+  /* Background */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #141B3A;
 }
 
 @theme inline {
+  /* Colors */
+  --color-primary-900: var(--primary-900);
+  --color-primary-800: var(--primary-800);
+  --color-primary-700: var(--primary-700);
+  --color-primary-600: var(--primary-600);
+  --color-primary-500: var(--primary-500);
+
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Fonts */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+
+  /* Border radius */
+  --radius-button: 9999px;
+  --radius-card: 1.5rem;
+  --radius-input: 0.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--accent-500);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-500);
+  color: white;
+}
+
+/* Scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-500);
+}
+
+/* ========================================
+   Premium Glossy Button Styles (V2 Design)
+   ======================================== */
+
+/* Light glossy button - CTA style */
+.btn-glossy-light {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 48px;
+  background: #000000;
+  background-blend-mode: plus-lighter;
+  box-shadow:
+    0px 0px 12px rgba(0, 0, 0, 0.1),
+    0px 6px 46px rgba(0, 0, 0, 0.12),
+    inset 17px 17px 3px -17px rgba(255, 255, 255, 0.75),
+    inset -17px -17px 3px -17px rgba(255, 255, 255, 0.8),
+    inset 6px 6px 6px -3px rgba(255, 255, 255, 0.75),
+    inset -6px -6px 6px -3px rgba(255, 255, 255, 0.75),
+    inset 0px 0px 6px 6px rgba(255, 255, 255, 0.15),
+    inset 0px 0px 6px 6px #999999,
+    inset 0px 0px 93px #F2F2F2;
+  backdrop-filter: blur(35px);
+  border-radius: 9999px;
+  font-weight: 500;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-glossy-light:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0px 0px 16px rgba(0, 0, 0, 0.15),
+    0px 8px 50px rgba(0, 0, 0, 0.18),
+    inset 17px 17px 3px -17px rgba(255, 255, 255, 0.75),
+    inset -17px -17px 3px -17px rgba(255, 255, 255, 0.8),
+    inset 6px 6px 6px -3px rgba(255, 255, 255, 0.75),
+    inset -6px -6px 6px -3px rgba(255, 255, 255, 0.75),
+    inset 0px 0px 6px 6px rgba(255, 255, 255, 0.15),
+    inset 0px 0px 6px 6px #999999,
+    inset 0px 0px 93px #F2F2F2;
+}
+
+/* Dark glossy button - Nav style */
+.btn-glossy-dark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background: #171717;
+  background-blend-mode: plus-lighter;
+  box-shadow:
+    0px 0px 3px rgba(0, 0, 0, 0.1),
+    0px 2px 14px rgba(0, 0, 0, 0.12),
+    inset 5px 5px 1px -5px rgba(255, 255, 255, 0.75),
+    inset -5px -5px 1px -5px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset -2px -2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15),
+    inset 0px 0px 2px 2px #999999,
+    inset 0px 0px 27px #F2F2F2;
+  backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  font-weight: 500;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-glossy-dark:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0px 0px 5px rgba(0, 0, 0, 0.15),
+    0px 4px 18px rgba(0, 0, 0, 0.18),
+    inset 5px 5px 1px -5px rgba(255, 255, 255, 0.75),
+    inset -5px -5px 1px -5px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset -2px -2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15),
+    inset 0px 0px 2px 2px #999999,
+    inset 0px 0px 27px #F2F2F2;
+}
+
+/* Scroll indicator pill - rectangulaire avec arrondis, style glossy transparent */
+.scroll-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 0.3px solid rgba(255, 255, 255, 0.3);
+  /* border-radius: 16px; */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-weight: 500;
+}
+
+.scroll-indicator:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-indicator:active {
+  transform: translateY(0) scale(0.95);
+}
+
+/* Diagonal section divider - integrated as border-bottom */
+.section-diagonal-bottom {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-diagonal-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 10;
+}
+
+/* Variante avec angle inverse */
+.section-diagonal-bottom-reverse {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-diagonal-bottom-reverse::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 10;
+}
+
+/* Transitions de couleurs spécifiques avec ligne diagonale nette */
+
+/* Blanc → Gris clair : ligne diagonale descendante gauche → droite */
+.diagonal-white-to-neutral::after {
+  background: linear-gradient(
+    177deg,
+    #ffffff 0%,
+    #ffffff calc(50% - 5px),
+    #364AA0 calc(50% - 4.9px),
+    #364AA0 calc(50% + 4.9px),
+    #F8FAFC calc(50% + 5px),
+    #F8FAFC 100%
+  );
+}
+
+/* Gris clair → Blanc : ligne diagonale montante gauche → droite */
+.diagonal-neutral-to-white::after {
+  background: linear-gradient(
+    183deg,
+    #F8FAFC 0%,
+    #F8FAFC calc(50% - 5px),
+    #364AA0 calc(50% - 4.9px),
+    #364AA0 calc(50% + 4.9px),
+    #ffffff calc(50% + 5px),
+    #ffffff 100%
+  );
+}
+
+/* Ancien système (deprecated - peut être supprimé si non utilisé) */
+.diagonal-divider {
+  position: relative;
+  width: 10vw;
+  height: 16px;
+  background: linear-gradient(90deg, #364AA0 0%, #141B3A 100%);
+  margin: -8px 0;
+  z-index: 10;
+}
+
+.diagonal-divider-reverse {
+  transform: rotate(3deg) scaleX(1.1);
+}
+
+.section-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Burger menu button */
+.btn-burger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #171717;
+  background-blend-mode: plus-lighter;
+  box-shadow:
+    0px 0px 3px rgba(0, 0, 0, 0.1),
+    0px 2px 14px rgba(0, 0, 0, 0.12),
+    inset 5px 5px 1px -5px rgba(255, 255, 255, 0.75),
+    inset -5px -5px 1px -5px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset -2px -2px 2px -1px rgba(255, 255, 255, 0.75),
+    inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15),
+    inset 0px 0px 2px 2px #999999,
+    inset 0px 0px 27px #F2F2F2;
+  backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-burger:hover {
+  transform: scale(1.05);
+}
+
+/* Hero background with tire pattern */
+.hero-tire-bg {
+  background:
+    linear-gradient(180deg, rgba(20, 27, 58, 0.85) 0%, rgba(20, 27, 58, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }

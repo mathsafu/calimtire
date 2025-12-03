@@ -1,0 +1,8 @@
+export { HeroSection } from "./hero"
+export { AffaireSection } from "./affaire"
+export { PrejudiceSection } from "./prejudice"
+export { ConcernedSection } from "./concerned"
+export { WhyUsSection } from "./why-us"
+export { AccomplishmentsSection } from "./accomplishments"
+export { MethodSection } from "./method"
+export { CTASection } from "./cta"

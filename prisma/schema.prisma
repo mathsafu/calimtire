@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  // Identity
+  firstName String
+  lastName  String
+  email     String
+  phone     String
+
+  // Profile
+  profileType ProfileType
+  companyName String?
+
+  // Purchase info
+  purchasePeriod  String
+  estimatedVolume String?
+
+  // Message
+  message String?
+
+  // GDPR
+  consentGiven    Boolean @default(false)
+  wantsNewsletter Boolean @default(false)
+
+  @@index([email])
+  @@index([createdAt])
+}
+
+enum ProfileType {
+  TRANSPORTEUR
+  ENTREPRISE
+  AGRICULTEUR
+  TAXI_VTC
+  SERVICE_PUBLIC
+  COLLECTIVITE
+  ETAT
+  PARTICULIER
+}
