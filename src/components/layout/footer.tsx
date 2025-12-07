@@ -53,7 +53,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Restez informé</h3>
             <p className="text-neutral-400 text-sm mb-4">
-              Soyez au courant de l&apos;actualité
+              Suivre l&apos;évolution de l&apos;affaire en justice
             </p>
             <form className="flex gap-2 mb-6">
               <input
