@@ -95,7 +95,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-primary-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-neutral-500 text-sm">
-            &copy; {new Date().getFullYear()} LEX-PORT. Tous droits réservés.
+            &copy; 2026 LEX-PORT. Tous droits réservés.
           </p>
           <div className="flex gap-6 text-sm">
             <Link href="/mentions-legales" className="text-neutral-500 hover:text-white transition-colors">

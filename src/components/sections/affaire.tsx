@@ -18,48 +18,43 @@ export function AffaireSection() {
             Une affaire d&apos;envergure européenne
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             {/* Timeline / Visual */}
-            <div className="relative">
-              <div className="bg-neutral-50 rounded-3xl p-8 lg:p-12">
+            <div className="relative flex flex-col">
+              <div className="flex-1 rounded-3xl p-8 lg:p-12 flex flex-col">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-14 h-14 bg-accent-500 rounded-2xl flex items-center justify-center">
-                    <Calendar className="w-7 h-7 text-white" />
+                    <Search className="w-7 h-7 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm text-neutral-500 uppercase tracking-wide">Date clé</p>
-                    <p className="text-2xl font-bold text-primary-900">30 janvier 2024</p>
+                    <p className="text-2xl font-bold text-accent-500 uppercase tracking-wide">Enquête en cours</p>
+                    <p className="text-sm text-neutral-600 mt-1">30 janvier 2024</p>
                   </div>
-                </div>
-
-                <div className="flex items-center gap-3 mb-6">
-                  <Search className="w-6 h-6 text-accent-500" />
-                  <span className="text-accent-500 font-medium">Enquête en cours</span>
                 </div>
 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start gap-3">
                     <div className="w-3 h-3 bg-accent-500 rounded-full mt-1.5 flex-shrink-0" />
                     <p className="text-neutral-700">
-                      La Commission européenne mène des inspections chez plusieurs fabricants de pneus
+                      La <strong>Commission européenne</strong> mène des inspections chez plusieurs <strong>fabricants de pneus</strong>
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-3 h-3 bg-accent-500 rounded-full mt-1.5 flex-shrink-0" />
                     <p className="text-neutral-700">
-                      Soupçons d&apos;entente sur les prix des pneus neufs de remplacement (Michelin, Pirelli, Continental...)
+                      Soupçons d&apos;<strong>entente sur les prix</strong> des pneus neufs de remplacement (<strong>Michelin</strong>, <strong>Pirelli</strong>, <strong>Continental</strong>...)
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-3 h-3 bg-accent-500 rounded-full mt-1.5 flex-shrink-0" />
                     <p className="text-neutral-700">
-                      Pneus pour voitures, camionnettes, camions et autobus vendus dans l&apos;UE
+                      Pneus pour <strong>voitures</strong>, <strong>camionnettes</strong>, <strong>camions</strong> et <strong>autobus</strong> vendus dans l&apos;UE
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-3 h-3 bg-accent-500 rounded-full mt-1.5 flex-shrink-0" />
                     <p className="text-neutral-700">
-                      Coordination tarifaire illicite via échanges d&apos;informations sensibles suspectée
+                      <strong>Coordination tarifaire illicite</strong> via échanges d&apos;informations sensibles suspectée
                     </p>
                   </div>
                 </div>
@@ -83,10 +78,10 @@ export function AffaireSection() {
             </div>
 
             {/* Illustrative Image */}
-            <div className="relative">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary-900 to-primary-700 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative flex flex-col">
+              <div className="flex-1 bg-gradient-to-br from-primary-900 to-primary-700 overflow-hidden shadow-2xl">
                 <img
-                  src="/images/europe-investigation.jpg"
+                  src="/antitrust_claimtire.jpeg"
                   alt="Enquête européenne sur le cartel des pneus"
                   className="w-full h-full object-cover opacity-90"
                 />

@@ -5,7 +5,7 @@ const reasons = [
     icon: Award,
     // title: "Expérience prouvée",
     description: "Premier et seul cabinet à avoir obtenu une indemnisation pour les transporteurs dans le Cartel des camions",
-    highlight: ""
+    highlight: "Expérience"
   },
   {
     icon: Users,
@@ -61,10 +61,10 @@ export function WhyUsSection() {
               rel="noopener noreferrer"
               className="text-white font-semibold hover:text-accent-300 transition-colors underline decoration-white/40 hover:decoration-accent-300"
             >
-              LEXPORT
+              <strong>LEXPORT</strong>
             </a>{" "}
-            s&apos;est imposé comme un acteur de référence
-            dans le traitement des contentieux de masse liés aux pratiques anticoncurrentielles,
+            s&apos;est imposé comme un <strong>acteur de référence</strong>{" "}
+            dans le traitement des <strong>contentieux de masse</strong> liés aux <strong>pratiques anticoncurrentielles</strong>,
             notamment dans le cadre du{" "}
             <a
               href="https://cartel.lex-port.com"
@@ -72,7 +72,7 @@ export function WhyUsSection() {
               rel="noopener noreferrer"
               className="text-white hover:text-accent-300 transition-colors underline decoration-white/40 hover:decoration-accent-300"
             >
-              cartel des camions
+              <strong>cartel des camions</strong>
             </a>.
           </p>
 

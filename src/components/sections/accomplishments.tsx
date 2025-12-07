@@ -1,5 +1,6 @@
 import { Trophy, TrendingUp, Users, Briefcase, ArrowRight } from "lucide-react"
 import { DiagonalSeparator } from "@/components/ui"
+import Image from "next/image"
 
 const pressArticles = [
   {
@@ -72,11 +73,8 @@ export function AccomplishmentsSection() {
             <p className="text-xl text-white/90 mb-2">
               par véhicule indemnisé
             </p>
-            <p className="text-white/70 mb-4">
+            <p className="text-white/70">
               dans le cadre du cartel des camions
-            </p>
-            <p className="text-sm text-white/80 italic border-t border-white/20 pt-4 mt-4">
-              Premier et seul cabinet à avoir obtenu une décision favorable sur le cartel des camions
             </p>
           </div>
 
@@ -130,9 +128,11 @@ export function AccomplishmentsSection() {
                 >
                   {/* Image */}
                   <div className="relative h-48 bg-neutral-100 flex items-center justify-center p-8">
-                    <img
+                    <Image
                       src={article.image}
                       alt={article.publisher}
+                      width={400}
+                      height={300}
                       className="max-h-full max-w-full object-contain"
                     />
                     <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs text-neutral-600 font-medium">

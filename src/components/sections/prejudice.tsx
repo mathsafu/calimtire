@@ -60,8 +60,7 @@ export function PrejudiceSection() {
                   Justificatifs acceptés
                 </h3>
                 <p className="text-neutral-600 text-sm">
-                  Factures, relevés bancaires, contrats de flotte... Nous vous accompagnons
-                  pour rassembler les documents nécessaires (factures...).
+                  Nous vous accompagnons pour rassembler les documents nécessaires (factures...).
                 </p>
               </div>
             </Card>

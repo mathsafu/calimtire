@@ -1,0 +1,27 @@
+{
+  "name": "ClaimTire - Cartel des Pneus - Réclamez votre indemnisation | LEX-PORT",
+  "short_name": "ClaimTire",
+  "description": "Victime du cartel des pneus ? LEX-PORT vous accompagne pour obtenir une indemnisation. Évaluation gratuite, sans frais à avancer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["legal", "business"],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}

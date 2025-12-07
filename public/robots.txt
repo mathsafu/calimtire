@@ -1,0 +1,16 @@
+# claimtire.com - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://claimtire.com/sitemap.xml
+
+# Crawl-delay (optionnel, si le serveur a besoin de respirer)
+# Crawl-delay: 10
+
+# Bloquer certains bots spammy (optionnel)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

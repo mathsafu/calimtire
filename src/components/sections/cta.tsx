@@ -26,11 +26,12 @@ export function CTASection() {
             {/* Contact info */}
             <div className="lg:col-span-2 text-white space-y-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
-                <h3 className="font-semibold text-lg mb-4">Contactez-nous</h3>
+                <h3 className="font-semibold text-lg mb-1">Contactez-nous</h3>
+                <p className="text-sm text-white/70 mb-4">Cabinet LEXPORT</p>
 
                 <div className="space-y-4">
-                  <a href="tel:+33557001445" className="flex items-center gap-3 hover:text-accent-500 transition-colors">
-                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+                  <a href="tel:+33557001445" className="flex items-center gap-3 hover:brightness-110 transition-all group">
+                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
@@ -39,25 +40,25 @@ export function CTASection() {
                     </div>
                   </a>
 
-                  <a href="mailto:contact@lex-port.com" className="flex items-center gap-3 hover:text-accent-500 transition-colors">
-                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+                  <a href="mailto:cartelpneus@lex-port.com" className="flex items-center gap-3 hover:brightness-110 transition-all group">
+                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-sm text-white/60">Email</p>
-                      <p className="font-medium">contact@lex-port.com</p>
+                      <p className="font-medium">cartelpneus@lex-port.com</p>
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+                  <a href="https://maps.app.goo.gl/smnYCDhnpxQz4yj5A" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:brightness-110 transition-all group">
+                    <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-sm text-white/60">Adresse</p>
-                      <p className="font-medium">14 Rue Alix d&apos;Unienville, n°102<br />33100 Bordeaux, France</p>
+                      <p className="font-medium">14 Rue Alix d&apos;Unienville<br />33100 Bordeaux, France</p>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 

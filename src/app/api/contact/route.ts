@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
         purchasePeriod: data.purchasePeriod,
         estimatedVolume: data.estimatedVolume || null,
         message: data.message || null,
-        consentGiven: data.consent
+        consentGiven: true // data.consent is z.literal(true), so it's always true if validated
       }
     })
 
@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
 
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { error: "Données invalides", details: error.errors },
+        { error: "Données invalides", details: error.issues },
         { status: 400 }
       )
     }

@@ -1,9 +1,7 @@
 import { PrismaClient } from "@prisma/client"
 
 const createPrismaClient = () => {
-  return new PrismaClient({
-    datasourceUrl: process.env.DATABASE_URL
-  })
+  return new PrismaClient()
 }
 
 const globalForPrisma = globalThis as unknown as {

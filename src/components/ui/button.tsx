@@ -59,7 +59,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       xs: "px-3 py-1.5 text-xs",
       sm: "px-6 py-2.5 text-sm",
       md: "px-8 py-3 text-base",
-      lg: "px-12 py-4 text-lg"
+      lg: "px-12 py-4 text-xl"
     }
 
     return (

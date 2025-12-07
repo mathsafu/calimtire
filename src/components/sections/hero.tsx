@@ -28,19 +28,19 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-16 sm:-mt-20">
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-          Le Cartel des Pneus
+          Le <strong>Cartel des Pneus</strong>
         </h1>
 
         <p className="text-2xl sm:text-3xl md:text-4xl text-white font-medium mb-8 max-w-4xl mx-auto">
-          Défendez vos droits, faites-vous indemniser
+          Défendez vos droits, <strong>faites-vous indemniser</strong>
         </p>
 
         <p className="text-lg sm:text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Vous êtes une entreprise, un transporteur, un service public ou un particulier ?
-          Vous avez acheté des pneus entre 2016 et 2025 ? Vous pourriez être victime
-          d&apos;une entente anticoncurrentielle et avoir droit à une indemnisation.
+          Vous êtes une <strong>entreprise</strong>, un <strong>transporteur</strong>, un service public ou un particulier ?
+          Vous avez acheté des <strong>pneus entre 2016 et 2025</strong> ? Vous pourriez être victime
+          d&apos;une <strong>entente anticoncurrentielle</strong> et avoir droit à une <strong>indemnisation</strong>.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

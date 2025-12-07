@@ -25,13 +25,15 @@ export const contactSchema = z.object({
   email: z.string().email("Email invalide"),
   phone: z.string().min(10, "Numéro de téléphone invalide"),
   profileType: z.enum(profileTypes, {
-    errorMap: () => ({ message: "Veuillez sélectionner votre profil" })
+    message: "Veuillez sélectionner votre profil"
   }),
   companyName: z.string().optional(),
+  purchasePeriod: z.string().min(1, "Veuillez indiquer la période d'achat"),
+  estimatedVolume: z.string().optional(),
   annualSpending: z.enum(annualSpendingRanges).optional(),
   message: z.string().max(1000, "Maximum 1000 caractères").optional(),
   consent: z.literal(true, {
-    errorMap: () => ({ message: "Vous devez accepter la politique de confidentialité" })
+    message: "Vous devez accepter la politique de confidentialité"
   })
 })
 
