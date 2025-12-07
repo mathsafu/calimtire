@@ -13,16 +13,16 @@ export function Footer() {
               <span className="text-white font-serif text-xl tracking-wider">LEX-PORT</span>
             </div>
             <p className="text-neutral-400 text-sm mb-4">
-              Cabinet d&apos;avocats spécialisé en droit de la concurrence
+              Cabinet d&apos;avocats en droit de la concurrence
             </p>
             <address className="text-neutral-400 text-sm not-italic">
-              14 Rue Alix d&apos;Unienville, n°102<br />
+              14 Rue Alix d&apos;Unienville<br />
               33100 Bordeaux, France<br />
               <a href="tel:+33557001445" className="hover:text-white transition-colors">
                 +33 (0)5 57 00 14 45
               </a><br />
-              <a href="mailto:contact@lex-port.com" className="hover:text-white transition-colors">
-                contact@lex-port.com
+              <a href="mailto:cartelpneus@lex-port.com" className="hover:text-white transition-colors">
+                cartelpneus@lex-port.com
               </a>
             </address>
           </div>
@@ -53,7 +53,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Restez informé</h3>
             <p className="text-neutral-400 text-sm mb-4">
-              Soyez au courant des évolutions législatives
+              Soyez au courant de l&apos;actualité
             </p>
             <form className="flex gap-2 mb-6">
               <input

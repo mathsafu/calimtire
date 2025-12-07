@@ -59,7 +59,7 @@ export async function sendConfirmationEmail(data: ContactFormData) {
               <p>Cordialement,<br><strong>L'équipe LEX-PORT</strong></p>
             </div>
             <div class="footer">
-              <p>© 2025 LEX-PORT - Cabinet d'avocats spécialisé en droit de la concurrence</p>
+              <p>© 2025 LEX-PORT - Cabinet d'avocats en droit de la concurrence</p>
             </div>
           </div>
         </body>

@@ -63,7 +63,7 @@ export function Header() {
               variant="primary"
               size="sm"
             >
-              Concernés
+              Victimes
             </Button>
             <Button
               onClick={() => scrollToSection("why-us")}
@@ -115,7 +115,7 @@ export function Header() {
                 size="sm"
                 className="w-full"
               >
-                Concernés
+                Victimes
               </Button>
               <Button
                 onClick={() => scrollToSection("why-us")}

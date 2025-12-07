@@ -34,7 +34,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-2xl sm:text-3xl md:text-4xl text-white font-medium mb-8 max-w-4xl mx-auto">
-          Défendez vos droits, réclamez votre indemnisation
+          Défendez vos droits, faites-vous indemniser
         </p>
 
         <p className="text-lg sm:text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">

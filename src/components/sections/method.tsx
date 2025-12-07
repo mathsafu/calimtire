@@ -3,7 +3,7 @@ import { BarChart3, FileEdit, Handshake, Scale, CheckCircle2, ChevronRight } fro
 const steps = [
   {
     icon: BarChart3,
-    title: "Évaluation statistique",
+    title: "Évaluation économique",
     description: "Analyse du surcoût subi basée sur des données économiques fiables"
   },
   {
@@ -13,8 +13,8 @@ const steps = [
   },
   {
     icon: Handshake,
-    title: "Négociation d'accords",
-    description: "Recherche de solutions amiables quand c'est dans votre intérêt"
+    title: "Procédure judiciaire",
+    description: "Échange des conclusions avec la partie adverse"
   },
   {
     icon: Scale,
@@ -84,8 +84,8 @@ export function MethodSection() {
                 </h3>
                 <p className="text-neutral-600">
                   Nous collaborons avec des <strong>experts économiques</strong> et des
-                  <strong> partenaires financiers</strong> pour garantir à nos clients
-                  une réparation juste. Avec l&apos;aide de nos partenaires financiers,
+                  <strong> partenaires financiers</strong> pour permettre à nos clients
+                  d&apos;obtenir une réparation juste. Avec l&apos;aide de nos partenaires financiers,
                   vous n&apos;aurez <strong>aucun frais à avancer</strong> - ils seront pris en charge.
                 </p>
               </div>

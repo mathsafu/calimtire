@@ -1,5 +1,5 @@
 import { Card, DiagonalSeparator } from "@/components/ui"
-import { TrendingUp, Calculator, FileText, AlertCircle } from "lucide-react"
+import { TrendingUp, Calculator, FileText } from "lucide-react"
 
 export function PrejudiceSection() {
   return (
@@ -9,7 +9,7 @@ export function PrejudiceSection() {
             Un préjudice massif et systémique
           </h2>
 
-          <p className="text-center text-neutral-600 max-w-3xl mx-auto mb-16 text-lg">
+          <p className="text-center text-neutral-600 max-w-3xl mx-auto mb-16 text-xl">
             Les pratiques anticoncurrentielles reprochées aux fabricants ont eu pour effet
             de fausser le libre jeu du marché, entraînant un surcoût généralisé pour
             les acheteurs de pneus.
@@ -24,33 +24,18 @@ export function PrejudiceSection() {
             </div>
 
             <p className="text-5xl md:text-6xl font-bold text-accent-600 mb-4">
-              15-25%
+              10-20%
             </p>
             <p className="text-xl text-primary-900 font-medium mb-2">
               du montant de vos achats de pneus
             </p>
             <p className="text-neutral-600">
-              Estimation préliminaire du préjudice durant la période de l&apos;entente
+              Estimation préliminaire du préjudice durant la période de l&apos;entente, sous réserve d&apos;une étude économique
             </p>
           </Card>
 
           {/* Info cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="flex flex-col items-start gap-4">
-              <div className="w-12 h-12 bg-primary-900/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                <AlertCircle className="w-6 h-6 text-primary-900" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-primary-900 mb-2">
-                  Stade préliminaire
-                </h3>
-                <p className="text-neutral-600 text-sm">
-                  Ce préjudice sera davantage précisé par les économistes une fois que
-                  la décision de la Commission européenne sera rendue.
-                </p>
-              </div>
-            </Card>
-
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card className="flex flex-col items-start gap-4">
               <div className="w-12 h-12 bg-primary-900/10 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Calculator className="w-6 h-6 text-primary-900" />
@@ -76,7 +61,7 @@ export function PrejudiceSection() {
                 </h3>
                 <p className="text-neutral-600 text-sm">
                   Factures, relevés bancaires, contrats de flotte... Nous vous accompagnons
-                  pour rassembler les documents nécessaires.
+                  pour rassembler les documents nécessaires (factures...).
                 </p>
               </div>
             </Card>

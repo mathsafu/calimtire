@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export const metadata = {
   title: "Contact - Cartel des Pneus | LEX-PORT",
-  description: "Contactez LEX-PORT pour une évaluation gratuite de votre dossier. Cabinet d'avocats spécialisé dans le cartel des pneus.",
+  description: "Contactez LEX-PORT pour une évaluation gratuite de votre dossier. Cabinet d'avocats en droit de la concurrence.",
 }
 
 export default function ContactPage() {
@@ -15,9 +15,12 @@ export default function ContactPage() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-primary-900 to-primary-800 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-3">
               Contactez-nous
             </h1>
+            <p className="text-2xl text-white/90 font-semibold mb-6">
+              Cabinet LEXPORT
+            </p>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Demandez une évaluation gratuite de votre situation.
               Nos équipes vous recontacteront dans les plus brefs délais.
@@ -48,14 +51,14 @@ export default function ContactPage() {
                     </div>
                   </a>
 
-                  <a href="mailto:contact@lex-port.com" className="flex items-start gap-4 group">
+                  <a href="mailto:cartelpneus@lex-port.com" className="flex items-start gap-4 group">
                     <div className="w-12 h-12 bg-accent-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <p className="text-sm text-neutral-500 mb-1">Email</p>
                       <p className="text-lg font-medium text-primary-900 group-hover:text-accent-500 transition-colors">
-                        contact@lex-port.com
+                        cartelpneus@lex-port.com
                       </p>
                     </div>
                   </a>
@@ -67,7 +70,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-sm text-neutral-500 mb-1">Adresse</p>
                       <p className="text-lg font-medium text-primary-900">
-                        14 Rue Alix d&apos;Unienville, n°102<br />
+                        14 Rue Alix d&apos;Unienville,<br />
                         33100 Bordeaux, France
                       </p>
                     </div>

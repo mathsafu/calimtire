@@ -4,8 +4,8 @@ const reasons = [
   {
     icon: Award,
     // title: "Expérience prouvée",
-    description: "Décisions inédites dans le cartel des camions",
-    highlight: ">7.900€/véhicule"
+    description: "Premier et seul cabinet à avoir obtenu une indemnisation pour les transporteurs dans le Cartel des camions",
+    highlight: ""
   },
   {
     icon: Users,
@@ -22,7 +22,7 @@ const reasons = [
   {
     icon: Wallet,
     // title: "Sans frais à avancer",
-    description: "Nos partenaires financiers prennent en charge",
+    description: "Nos partenaires financiers prennent en charge le coût de la procédure judiciaire",
     highlight: "0€ à avancer"
   }
 ]
@@ -53,10 +53,27 @@ export function WhyUsSection() {
             Pourquoi faire appel à nous ?
           </h2>
 
-          <p className="text-center text-white/80 max-w-3xl mx-auto mb-16 text-lg">
-            Depuis plusieurs années, notre cabinet s&apos;est imposé comme un acteur de référence
+          <p className="text-center text-white/80 max-w-3xl mx-auto mb-16 text-xl">
+            Depuis plusieurs années, notre cabinet{" "}
+            <a
+              href="https://lex-port.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white font-semibold hover:text-accent-300 transition-colors underline decoration-white/40 hover:decoration-accent-300"
+            >
+              LEXPORT
+            </a>{" "}
+            s&apos;est imposé comme un acteur de référence
             dans le traitement des contentieux de masse liés aux pratiques anticoncurrentielles,
-            notamment dans le cadre du cartel des camions.
+            notamment dans le cadre du{" "}
+            <a
+              href="https://cartel.lex-port.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-accent-300 transition-colors underline decoration-white/40 hover:decoration-accent-300"
+            >
+              cartel des camions
+            </a>.
           </p>
 
           {/* Key stats */}
@@ -97,20 +114,6 @@ export function WhyUsSection() {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Description text */}
-          <div className="max-w-3xl mx-auto text-center space-y-4 text-white/80">
-            <p>
-              Nous avons représenté près d&apos;une centaine de victimes, soit plusieurs milliers
-              de véhicules concernés, dans des procédures complexes et stratégiques devant les
-              juridictions commerciales françaises.
-            </p>
-            <p>
-              Notre approche repose sur une coordination rigoureuse, une analyse économique
-              approfondie du préjudice, et une stratégie judiciaire adaptée à chaque typologie
-              de client : transporteurs, collectivités, industriels ou PME.
-            </p>
           </div>
         </div>
     </section>

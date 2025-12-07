@@ -8,8 +8,7 @@ import {
   contactSchema,
   type ContactFormData,
   profileOptions,
-  periodOptions,
-  volumeSelectOptions
+  annualSpendingOptions
 } from "@/lib/validations"
 import { CheckCircle, AlertCircle } from "lucide-react"
 
@@ -133,24 +132,14 @@ export function ContactForm() {
         />
       )}
 
-      {/* Purchase info */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Select
-          label="Période d'achat"
-          options={periodOptions}
-          placeholder="Sélectionnez une période"
-          {...register("purchasePeriod")}
-          error={errors.purchasePeriod?.message}
-          required
-        />
-        <Select
-          label="Volume estimé de pneus"
-          options={volumeSelectOptions}
-          placeholder="Sélectionnez une fourchette"
-          {...register("estimatedVolume")}
-          error={errors.estimatedVolume?.message}
-        />
-      </div>
+      {/* Annual spending */}
+      <Select
+        label="Montant annuel de dépenses (en dollars)"
+        options={annualSpendingOptions}
+        placeholder="Sélectionnez une fourchette"
+        {...register("annualSpending")}
+        error={errors.annualSpending?.message}
+      />
 
       {/* Message */}
       <Textarea
@@ -203,7 +192,7 @@ export function ContactForm() {
         isLoading={isSubmitting}
         className="w-full md:w-auto"
       >
-        Envoyer ma demande
+        Faire une évaluation gratuite
       </Button>
       </div>
     </form>

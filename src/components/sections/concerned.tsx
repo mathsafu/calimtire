@@ -34,7 +34,7 @@ const profiles = [
   {
     icon: Landmark,
     title: "Services publics",
-    description: "ambulances, pompiers, police..."
+    description: "pompiers, policiers..."
   },
   {
     icon: Building,
